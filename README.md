@@ -1,10 +1,12 @@
-# Diffusion Model based Denoising
+# On the Asymptotic Mean Square Error Optimality of Diffusion Probabilistic Models
 
-## Setup Guide
-To permanently add the project directory to the python `PATH` of this environment
-```shell
-conda develop .
-```
+Implementation to reproduce the simulation results of 
+>B. Fesl, B. Böck, F. Strasser, M. Baur, M. Joham, and W. Utschick, "On the Asymptotic Mean Square Error Optimality of Diffusion Probabilistic Models," arXiv preprint, 2024.
+
+## Load data
+Load data and pre-trained models from 
+https://syncandshare.lrz.de/getlink/fiAsDStAV6i5FFJHyfhrcY/ (Passcode: Diffusion2024)
+and move it to the project's directory.
 
 ## Information about required packages
 Down below is a list of mandatory and optional packages with their versions, if a specific version is required.
@@ -36,20 +38,26 @@ Down below is a list of mandatory and optional packages with their versions, if 
 python dpm_denoiser.py -d cuda:0
 ```
 
-2. Load pre-trained model and evaluate it (currently only working with option "rand_gmm" since data is in non-anonymous repository)
+2. Load pre-trained model and evaluate it
 ```shell
 python load_and_eval_dpm.py -d cuda:0
 ```
 
-3. Evaluate real-valued baselines (GMM-based CME and LS); (currently only working with option "rand_gmm" since data is in non-anonymous repository)
+3. Evaluate real-valued baselines (GMM-based CME and LS)
 ```shell
 python baselines.py
 ```
 
-4. Evaluate complex-valued baseline with audio-data (GMM-based CME and LS); (currently not available since data is in non-anonymous repository)
+4. Evaluate complex-valued baseline with audio-data (GMM-based CME and LS)
 ```shell
 python audio_gmm.py
 ```
+
+## Data Options
+1. rand_gmm
+2. MNIST_gmm
+3. FASHION_MNIST_gmm
+4. audio_gmm
 
 ## Licenses
 The diffusion model architecture is based upon the code from https://github.com/lucidrains/denoising-diffusion-pytorch under the following license:
@@ -135,4 +143,33 @@ The complex-valued extension of the Gaussian mixture model implementation stems 
 >OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 >OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-The extensions to the above implementations are also covered by the BSD 3-Clause License.
+The extensions to the above implementations are also covered by the BSD 3-Clause License:
+
+>BSD 3-Clause License
+>
+>Copyright (c) 2024 Benedikt Fesl. All rights reserved.
+>
+>Redistribution and use in source and binary forms, with or without
+>modification, are permitted provided that the following conditions are met:
+>
+>1. Redistributions of source code must retain the above copyright notice, this
+>   list of conditions and the following disclaimer.
+>
+>2. Redistributions in binary form must reproduce the above copyright notice,
+>   this list of conditions and the following disclaimer in the documentation
+>   and/or other materials provided with the distribution.
+>
+>3. Neither the name of the copyright holder nor the names of its
+>   contributors may be used to endorse or promote products derived from
+>   this software without specific prior written permission.
+>
+>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+>AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+>IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+>DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+>FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+>DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+>SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+>CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+>OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+>OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
