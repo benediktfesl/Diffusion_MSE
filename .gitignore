@@ -1,0 +1,13 @@
+# directories
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+tmp/
+bin/*
+
+results/*
+
+# files
+sync_files
+exclude_sync.txt
+**.DS_Store
