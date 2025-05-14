@@ -1,10 +1,9 @@
 # On the Asymptotic Mean Square Error Optimality of Diffusion Models
 
-Implementation to reproduce the simulation results of 
->B. Fesl, B. Böck, F. Strasser, M. Baur, M. Joham, and W. Utschick, "On the Asymptotic Mean Square Error Optimality of Diffusion Models," in _28th International Conference on Artificial Intelligence and Statistics (AISTATS)_, 2025, arXiv preprint: 2403.02957. 
+Implementation to reproduce the simulation results of the paper
+>B. Fesl, B. Böck, F. Strasser, M. Baur, M. Joham, W. Utschick, "On the Asymptotic Mean Square Error Optimality of Diffusion Models." In _Proceedings of the 28th International Conference on Artificial Intelligence and Statistics_, 2025.
 
-Link to arXiv preprint: https://arxiv.org/abs/2403.02957 \
-Link to OpenReview: https://openreview.net/forum?id=XrXlAYFpvR
+[[arXiv](https://arxiv.org/abs/2403.02957)] [[OpenReview](https://openreview.net/forum?id=XrXlAYFpvR)] [[PMLR](https://proceedings.mlr.press/v258/fesl25a.html)]
 
 ## Load data
 Load data and pre-trained models from 
