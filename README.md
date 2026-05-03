@@ -15,8 +15,7 @@ A standalone, reusable implementation of the DMSE scheduler is available as a Py
 pip install diffusers-dmse
 ```
 
-- PyPI: https://pypi.org/project/diffusers-dmse/
-- Source: https://github.com/benediktfesl/diffusers-MSEopt
+[[PyPI](https://pypi.org/project/diffusers-dmse/)] [[GitHub](https://github.com/benediktfesl/diffusers-dmse)]
 
 This repository contains the original research implementation used for the experiments in the paper.  
 The PyPI package provides a clean, diffusers-compatible version of the scheduler, but is **not used directly in this codebase**.
