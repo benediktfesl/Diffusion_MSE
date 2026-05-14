@@ -85,4 +85,4 @@ The diffusion model architecture is based upon the code from https://github.com/
 
 The real-valued Gaussian mixture model implementation stems from https://scikit-learn.org/stable/modules/mixture.html and is covered by the BSD 3-Clause License.
 
-The complex-valued extension of the Gaussian mixture model implementation stems from https://github.com/benediktfesl/GMM_cplx and is covered by the BSD 3-Clause License.
+The complex-valued extension of the Gaussian mixture model implementation stems from https://github.com/benediktfesl/cplx-gmm and is covered by the BSD 3-Clause License.
